@@ -1,0 +1,35 @@
+.Website {
+    display: grid;
+    grid-template-rows: 10% 90%;
+    grid-template-areas: 
+      "header"
+      "planner"
+      "footer";
+  }
+  
+  .BearTracksHeader {
+    color: black;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-bottom: 0px;
+  }
+  
+  .Brand {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .Logo {
+    margin-top: -5px;
+    margin-right: 5px;
+  }
+  
+  .BearTracks {
+    margin-top: -1px;
+    font-size: 30px;
+  }
+
+  .Footer {
+    border-top: solid 1px gray;
+    justify-content: center;
+  }

@@ -1,0 +1,26 @@
+[
+    {
+      "Division": "Berkeley Requirements",
+      "Requirement": "Entry Level Writing",
+      "Number of Classes": 1,
+      "Minimum Units": 4
+    },
+    {
+      "Division": "Berkeley Requirements",
+      "Requirement": "American History",
+      "Number of Classes": 1,
+      "Minimum Units": 4
+    },
+    {
+      "Division": "Berkeley Requirements",
+      "Requirement": "American Institutions",
+      "Number of Classes": 1,
+      "Minimum Units": 4
+    },
+    {
+      "Division": "Berkeley Requirements",
+      "Requirement": "American Cultures",
+      "Number of Classes": 1,
+      "Minimum Units": 4
+    }
+  ]

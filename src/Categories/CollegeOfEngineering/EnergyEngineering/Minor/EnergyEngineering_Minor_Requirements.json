@@ -1,0 +1,74 @@
+[
+  {
+    "Division": "Lower Division",
+    "Requirement": "Calculus I",
+    "Number of Classes": 1,
+    "Minimum Units": 4
+  },
+  {
+    "Division": "Lower Division",
+    "Requirement": "Calculus II",
+    "Number of Classes": 1,
+    "Minimum Units": 4
+  },
+  {
+    "Division": "Lower Division",
+    "Requirement": "Multivariable Calculus",
+    "Number of Classes": 1,
+    "Minimum Units": 4
+  },
+  {
+    "Division": "Lower Division",
+    "Requirement": "Linear Algebra",
+    "Number of Classes": 1,
+    "Minimum Units": 4
+  },
+  {
+    "Division": "Lower Division",
+    "Requirement": "Chemistry",
+    "Number of Classes": 1,
+    "Minimum Units": 4
+  },
+  {
+    "Division": "Lower Division",
+    "Requirement": "Physics I",
+    "Number of Classes": 1,
+    "Minimum Units": 4
+  },
+  {
+    "Division": "Lower Division",
+    "Requirement": "Physics II",
+    "Number of Classes": 1,
+    "Minimum Units": 4
+  },
+  {
+    "Division": "Lower Division",
+    "Requirement": "Computer Programming",
+    "Number of Classes": 1,
+    "Minimum Units": 4
+  },
+  {
+    "Division": "Upper Division",
+    "Requirement": "Requirement I",
+    "Number of Classes": 1,
+    "Minimum Units": 4
+  },
+  {
+    "Division": "Upper Division",
+    "Requirement": "Requirement II",
+    "Number of Classes": 1,
+    "Minimum Units": 4
+  },
+  {
+    "Division": "Upper Division",
+    "Requirement": "Requirement III",
+    "Number of Classes": 1,
+    "Minimum Units": 3
+  },
+  {
+    "Division": "Upper Division",
+    "Requirement": "Requirement IV",
+    "Number of Classes": 2,
+    "Minimum Units": 6
+  }
+]

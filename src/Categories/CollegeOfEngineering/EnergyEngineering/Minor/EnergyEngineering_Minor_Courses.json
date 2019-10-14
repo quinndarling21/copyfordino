@@ -1,0 +1,338 @@
+[
+  {
+    "Division": "Lower Division",
+    "Requirement": "Calculus I",
+    "Category": "",
+    "Course": "MATH 1A",
+    "Title": "Calculus",
+    "Units": 4
+  },
+  {
+    "Division": "Lower Division",
+    "Requirement": "Calculus II",
+    "Category": "",
+    "Course": "MATH 1B",
+    "Title": "Calculus",
+    "Units": 4
+  },
+  {
+    "Division": "Lower Division",
+    "Requirement": "Multivariable Calculus",
+    "Category": "",
+    "Course": "MATH 53",
+    "Title": "Multivariable Calculus",
+    "Units": 4
+  },
+  {
+    "Division": "Lower Division",
+    "Requirement": "Linear Algebra",
+    "Category": "",
+    "Course": "MATH 54",
+    "Title": "Linear Algebra",
+    "Units": 4
+  },
+  {
+    "Division": "Lower Division",
+    "Requirement": "Chemistry",
+    "Category": "",
+    "Course": "CHEM 1A & 1AL",
+    "Title": "General Chemistry",
+    "Units": 4
+  },
+  {
+    "Division": "Lower Division",
+    "Requirement": "Chemistry",
+    "Category": "",
+    "Course": "CHEM 3A",
+    "Title": "Chemical Structure and Reactivity",
+    "Units": 4
+  },
+  {
+    "Division": "Lower Division",
+    "Requirement": "Physics I",
+    "Category": "",
+    "Course": "PHYSICS 7A",
+    "Title": "Physics for Scientists and Engineers",
+    "Units": 4
+  },
+  {
+    "Division": "Lower Division",
+    "Requirement": "Physics II",
+    "Category": "",
+    "Course": "PHYSICS 7B",
+    "Title": "Physics for Scientists and Engineers",
+    "Units": 4
+  },
+  {
+    "Division": "Upper Division",
+    "Requirement": "Requirement I",
+    "Category": "",
+    "Course": "ME 40",
+    "Title": "Thermodynamics",
+    "Units": 4
+  },
+  {
+    "Division": "Upper Division",
+    "Requirement": "Requirement I",
+    "Category": "",
+    "Course": "ENGIN 115",
+    "Title": "Engineering Thermodynamics",
+    "Units": 4
+  },
+  {
+    "Division": "Upper Division",
+    "Requirement": "Requirement II",
+    "Category": "",
+    "Course": "EE 137A",
+    "Title": "Intro to Electric Power Systems",
+    "Units": 4
+  },
+  {
+    "Division": "Upper Division",
+    "Requirement": "Requirement III",
+    "Category": "",
+    "Course": "ER C100",
+    "Title": "Energy and Society",
+    "Units": 4
+  },
+  {
+    "Division": "Upper Division",
+    "Requirement": "Requirement III",
+    "Category": "",
+    "Course": "CIV ENG C106",
+    "Title": "Air Pollution",
+    "Units": 4
+  },
+  {
+    "Division": "Upper Division",
+    "Requirement": "Requirement III",
+    "Category": "",
+    "Course": "CIV ENG 107",
+    "Title": "Climate Change Mitigation",
+    "Units": 4
+  },
+  {
+    "Division": "Upper Division",
+    "Requirement": "Requirement III",
+    "Category": "",
+    "Course": "CIV ENG 111",
+    "Title": "Evironmental Engineering",
+    "Units": 4
+  },
+  {
+    "Division": "Upper Division",
+    "Requirement": "Requirement IV",
+    "Category": "",
+    "Course": "ARCH 140",
+    "Title": "Energy and Environment",
+    "Units": 4
+  },
+  {
+    "Division": "Upper Division",
+    "Requirement": "Requirement IV",
+    "Category": "",
+    "Course": "CY PLAN 119",
+    "Title": "Planning for Sustainability",
+    "Units": 4
+  },
+  {
+    "Division": "Upper Division",
+    "Requirement": "Requirement IV",
+    "Category": "",
+    "Course": "CIV ENG C106",
+    "Title": "Air Pollution",
+    "Units": 4
+  },
+  {
+    "Division": "Upper Division",
+    "Requirement": "Requirement IV",
+    "Category": "",
+    "Course": "CIV ENG 107",
+    "Title": "Climate Change Mitigation",
+    "Units": 4
+  },
+  {
+    "Division": "Upper Division",
+    "Requirement": "Requirement IV",
+    "Category": "",
+    "Course": "CIV ENG 111",
+    "Title": "Evironmental Engineering",
+    "Units": 4
+  },
+  {
+    "Division": "Upper Division",
+    "Requirement": "Requirement IV",
+    "Category": "",
+    "Course": "CIV ENG 115",
+    "Title": "Water Chemistry",
+    "Units": 3
+  },
+  {
+    "Division": "Upper Division",
+    "Requirement": "Requirement IV",
+    "Category": "",
+    "Course": "CIV ENG 156",
+    "Title": "Infrastructure Planning and Management",
+    "Units": 4
+  },
+  {
+    "Division": "Upper Division",
+    "Requirement": "Requirement IV",
+    "Category": "",
+    "Course": "EL ENG 134",
+    "Title": "Fundamentals of Photovoltaic Devices",
+    "Units": 4
+  },
+  {
+    "Division": "Upper Division",
+    "Requirement": "Requirement IV",
+    "Category": "",
+    "Course": "EL ENG 137B",
+    "Title": "Intro to Electric Power Systems",
+    "Units": 4
+  },
+  {
+    "Division": "Upper Division",
+    "Requirement": "Requirement IV",
+    "Category": "",
+    "Course": "ER C100",
+    "Title": "Energy and Society",
+    "Units": 4
+  },
+  {
+    "Division": "Upper Division",
+    "Requirement": "Requirement IV",
+    "Category": "",
+    "Course": "ER 101",
+    "Title": "Ecology and Society",
+    "Units": 4
+  },
+  {
+    "Division": "Upper Division",
+    "Requirement": "Requirement IV",
+    "Category": "",
+    "Course": "ER C180",
+    "Title": "Ecological Economics in Historical Context",
+    "Units": 3
+  },
+  {
+    "Division": "Upper Division",
+    "Requirement": "Requirement IV",
+    "Category": "",
+    "Course": "ENGIN 120",
+    "Title": "Principles of Engineering Economics",
+    "Units": 4
+  },
+  {
+    "Division": "Upper Division",
+    "Requirement": "Requirement IV",
+    "Category": "",
+    "Course": "ENGIN 194",
+    "Title": "Undergraduate Research",
+    "Units": 4
+  },
+  {
+    "Division": "Upper Division",
+    "Requirement": "Requirement IV",
+    "Category": "",
+    "Course": "ENVECON 147",
+    "Title": "Regulation of Energy and the Environment",
+    "Units": 4
+  },
+  {
+    "Division": "Upper Division",
+    "Requirement": "Requirement IV",
+    "Category": "",
+    "Course": "ENVECON C151",
+    "Title": "Economic Development",
+    "Units": 4
+  },
+  {
+    "Division": "Upper Division",
+    "Requirement": "Requirement IV",
+    "Category": "",
+    "Course": "ENVECON 153",
+    "Title": "Population",
+    "Units": "Evironment"
+  },
+  {
+    "Division": "Upper Division",
+    "Requirement": "Requirement IV",
+    "Category": "",
+    "Course": "ENVECON 154",
+    "Title": "Economics of Poverty and Technology",
+    "Units": 3
+  },
+  {
+    "Division": "Upper Division",
+    "Requirement": "Requirement IV",
+    "Category": "",
+    "Course": "ESPM 102D",
+    "Title": "Climate and Energy Policy",
+    "Units": 4
+  },
+  {
+    "Division": "Upper Division",
+    "Requirement": "Requirement IV",
+    "Category": "",
+    "Course": "GEOG 142",
+    "Title": "Climate Dynamics",
+    "Units": 4
+  },
+  {
+    "Division": "Upper Division",
+    "Requirement": "Requirement IV",
+    "Category": "",
+    "Course": "IEOR 172",
+    "Title": "Probability and Risk Analysis for Engineers",
+    "Units": 3
+  },
+  {
+    "Division": "Upper Division",
+    "Requirement": "Requirement IV",
+    "Category": "",
+    "Course": "STAT 134",
+    "Title": "Concepts of Probability",
+    "Units": 4
+  },
+  {
+    "Division": "Upper Division",
+    "Requirement": "Requirement IV",
+    "Category": "",
+    "Course": "MAT SCI 136",
+    "Title": "Materials in Energy Technologies",
+    "Units": 4
+  },
+  {
+    "Division": "Upper Division",
+    "Requirement": "Requirement IV",
+    "Category": "",
+    "Course": "MEC ENG 106",
+    "Title": "Fluid Mechanics",
+    "Units": 3
+  },
+  {
+    "Division": "Upper Division",
+    "Requirement": "Requirement IV",
+    "Category": "",
+    "Course": "MEC ENG 109",
+    "Title": "Heat Transfer",
+    "Units": 3
+  },
+  {
+    "Division": "Upper Division",
+    "Requirement": "Requirement IV",
+    "Category": "",
+    "Course": "NUC ENG 161",
+    "Title": "Nuclear Power Engineering",
+    "Units": 4
+  },
+  {
+    "Division": "Upper Division",
+    "Requirement": "Requirement IV",
+    "Category": "",
+    "Course": "POLECON 101",
+    "Title": "Contemporary Theories of Political Economy",
+    "Units": 4
+  }
+]

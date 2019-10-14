@@ -1,0 +1,988 @@
+body {
+    background-color: #F6F6F6;
+    min-height: 100%;
+}
+
+h1, h2, h3, span {
+font-family: 'Roboto', sans-serif;
+}
+
+.Website {
+    display: grid;
+    grid-template-rows: 10% 97%;
+    grid-template-areas: 
+      "header"
+      "planner"
+      "footer";
+}
+
+    .BearTracksHeader {
+    color: black;
+    background-color: white;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-bottom: 0px;
+    }
+
+        .Brand {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .Logo {
+            margin-top: -5px;
+            margin-right: 5px;
+        }
+        
+        .BearTracks {
+            margin-top: -1px;
+            font-size: 1.5vw;
+        }
+    .Planner {
+        background-color: #F6F6F6;
+        grid-area: planner;
+        max-height: 100%;
+        display: grid;
+        grid-template-columns: 33%;
+        grid-column-gap: 20px; 
+        grid-template-areas:
+            "courses schedule"
+        }
+
+        .CourseContainer {
+            background-color: white;
+            grid-area: courses;
+            margin-left: 20px;
+            display: grid;
+            max-width: 100%;
+            grid-template-rows: 5% 5%;
+            grid-template-areas:
+                "progress"
+                "category"
+                "divisionList"
+          }
+
+            .TotalProgress {
+            grid-area: progress;
+            font-size: 1vw;
+            display: grid;
+            padding-top: 10px;
+            padding-left: 5px;
+            border-bottom-style: solid;
+            border-bottom-color: lightgray;
+            border-bottom-width: 1px;
+            grid-template-columns: 18%;
+            grid-template-areas:
+                "texty bar"
+            }
+          
+                .totProg {
+                    grid-area: texty;
+                    float: left;
+                    color: darkslategrey;
+                    margin-bottom: 4px;
+                    font-weight: 575;
+                    white-space: nowrap;
+                    font-size: 1vw;
+                }
+                
+                .TotalProgressBar {
+                    grid-area: bar;
+                    height: 20px;
+                    color: black;
+                    float: right;
+                    width: 95%;
+                    margin-left: 10px;
+                }
+        
+
+            .Category {
+                margin-top: 5px;
+                grid-area: category;
+                display: grid;
+                grid-template-columns: 98%;
+                grid-template-areas: 
+                "drop completeness"
+            }
+
+                .CategoryDropdown {
+                    grid-area: drop;
+                    font-size: 1.25vw;
+                    float: left;
+                    padding-left: 2px;
+                    margin-bottom: 2px;
+                    font-weight: 500;
+                }
+
+                    .CategoryToggle {
+                        color: #007bff;
+                        background-color: white;
+                        border: none;
+                        font-size: 1.25vw;
+                        padding: 2px;
+                        margin-right: 5px;
+                        margin-bottom: 5px;
+                        font-weight: 600;
+                    }
+
+                    .CategoryToggle:hover {
+                      background-color: #007bff;
+                    }
+                
+                .CategoryProgress {
+                    grid-area: completeness;
+                    color: darkslategrey;
+                    font-size: 1vw;
+                    margin-top: 1%;
+                    float: right;
+                }
+
+                .DivisionList {
+                    border-right: none;
+                    font-size: 1vw;
+                    padding-left: 2%;
+                  }
+                  
+                  .DivisionButton {
+                    color:white;
+                  }
+                  
+                  .SearchIcon {
+                    color: white;
+                  }
+
+                  .CourseSearchForm {
+                    margin-left: 8px;
+                    width: 90% !important;
+                  }
+
+                  .CourseSearchBar {
+                    width: 100% !important;
+                  }
+
+                .RequirementTable {
+                    grid-area: divisionList;
+                    position: relative;
+                    overflow: auto;
+                    max-width: 100%;
+                    height: 628px;
+                  }
+
+                  .requirement {
+                      margin: 0px;
+                      background-color: white;
+                      border-radius: 0px;
+                      border-width: 0px;
+                  }
+
+                  .RequirementHeader {
+                    background-color: white;
+                  }
+
+                  .RequirementHover:hover {
+                    border-left-width: 5px;
+                    border-left-color: #033263;
+                    -webkit-transform: rotate(180);
+                  }
+
+                  .RequirementInfo {
+                    padding-top: 1%;
+                    display: grid;
+                    font-family: helvetica-neue;
+                    font-weight: 600;
+                    grid-template-columns: 12fr 3fr 1fr;
+                    grid-template-areas: "title reqProg reqOptionsButton";
+                    align-items: center;
+                    margin-right: -5%
+                  }
+
+                  .RequirementTitle {
+                    grid-area: title;
+                    grid-row: 1;
+                    padding-bottom: -.5%;
+                    color: #007bff;
+                    font-weight: 600;
+                    font-size: 1.15vw;
+                    text-align: left;
+                    justify-self: left;
+                    margin-top: 1.5%;
+                    margin-bottom: 2%;
+                    
+                  }
+
+                  .RequirementDropDown {
+                    grid-area: drop;
+                    justify-self: left;
+                  }
+
+                  .RequirementProgress {
+                    grid-row: 1;
+                    color: #007bff;
+                    font-weight: 600;
+                    font-size: 1.15vw;
+                    align-self: center;
+                    justify-self: right;
+                    margin-top: 1.5%;
+                    margin-bottom: 2%;
+                  }
+
+                  .InsufficientUnits {
+                    padding-bottom: -.5%;
+                    color: #007bff;
+                    font-weight: 600;
+                    font-size: 1vw;
+                    margin-right: 0vw;
+                    white-space: nowrap;
+                    margin-top: 7%;
+                  }
+
+                  .RequirementOptionsButton {
+                    grid-area: reqOptionsButton;
+                    height: 1.5vw;
+                    animation: fadein 1s;
+                    }
+
+                  @keyframes fadein {
+                      from { opacity: 0; }
+                      to   { opacity: 1; }
+                  }
+
+                  .SubgroupCard {
+                    margin-left: 2px;
+                    margin-right: 2px;
+                    margin-top: 2px;
+                    color: #007bff;
+                    background-color:#EBF9FF;
+                    border: #007bff 1px;
+                    border-style: solid;
+                  }
+
+                  .SubgroupCardHeader {
+                    margin-top: 2px;
+                    font-size: 1vw;
+                    max-width: 100%;
+                    padding: 10px;
+                    font-weight: 600;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                  }
+
+                  .SubgroupCollapse {
+                    background-color: white;
+                  }
+
+                  .SubgroupCourse {
+                    padding: 5px;
+                    margin: 10px;
+                  }
+                  
+                  .reqInfo {
+                    font-size: 1.25vw;
+                  }
+                  
+                  .numCoursesRequired {
+                    font-size: 1.25vw;
+                    text-align: center;
+                    margin-bottom: -5px;
+                  }
+                  
+                  .numUnitsRequired {
+                    font-size: 1.25vw;
+                    text-align: center;
+                    margin-bottom: -42px;
+                  }
+                  
+                  .showCourses {
+                    margin-left: 93%;
+                    font-size: 1.25vw;
+                  }
+                  
+                  .CoursePlan {
+                    width: 60%;
+                    min-height: 200px;
+                    border-bottom: 1px solid grey;
+                  }
+                  
+                  
+
+                  .CompletedCourseInfo {
+                    margin: 4px;
+                    width: 98%;
+                    padding: 10px;
+                    display: grid;
+                    grid-template-columns: 50%;
+                    grid-template-areas: "compcourse word";
+                    color: #0F9D58;
+                    background-color: #EBFFEC;
+                    font-size: 1vw;
+                    border-radius: 5px;
+                  }
+
+                  .Completed {
+                    grid-area: word;
+                    justify-self: end;
+                    font-size: 1vw;
+                    font-weight: 700;
+                }
+
+                 .CompletedCourse {
+                   font-weight: 600;
+                   grid-area: compcourse;
+                   justify-self: start;
+                   font-size: 1vw;
+
+                 }
+
+                  .CompletedCourseButton:hover {
+                    background-color: #cbffc9;
+                    color: #0F9D58;
+                  }
+
+                  .CourseButton {
+                    margin-left: 2px;
+                    margin-right: 2px;
+                    margin-top: 2px;
+                    color: #007bff;
+                    background-color:#EBF9FF 
+                  }
+
+                  .CompletedCourseButton {
+                    margin-left: 2px;
+                    margin-right: 2px;
+                    margin-top: 2px;
+                    background-color: #EBFFEC;
+                    color: #0F9D58;
+                  }
+                  
+                  .CourseButtonHeader {
+                    margin-top: 2px;
+                    font-size: 1vw;
+                    max-width: 100%;
+                    padding: 10px;
+                    font-weight: 600;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: grid;
+                    grid-template-areas: 'title icons';
+                    grid-template-columns: 95%;
+                  }
+                    .OverlapAlertIcon {
+                      justify-self: right;
+                      grid-area: icons;
+                      vertical-align: middle;
+                    }
+
+                    .OverlapWarningAlertIcon {
+                      justify-self: right;
+                      grid-area: icons;
+                      vertical-align: middle;
+                    }
+
+                  .CompletedCourseButtonHeader {
+                    margin-top: 2px;
+                    font-size: 1vw;
+                    max-width: 100%;
+                    padding: 10px;
+                    font-weight: 600;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: grid;
+                    grid-template-areas: 'title icons';
+                    grid-template-columns: 95%;
+                  }
+                  
+                  .CompletedCourseButtonHeader:hover {
+                    
+                    color: #0F9D58;
+                  }
+
+                  @keyframes courseButtonHover {
+                    from {background-color: #EBF9FF}
+                    to {background-color: #c4e4ff}
+                  }
+                
+
+                  .CourseButton:hover {
+                    animation: courseButtonHover;
+                    animation-duration: .5s;
+                    background-color: #c4e4ff;
+                    color: #007bff;
+                  }
+
+                  .CourseButtonHeader:hover {
+                    color: #007bff;
+                  }
+
+                  .CourseDescription {
+                    font-size: 1vw;
+                    padding: 0;
+                    background-color: white;
+      
+                  }
+
+                  .CompletedCourseDescription {
+                    font-size: 1vw;
+                    padding: 0;
+                    background-color: white;
+                  }
+                  
+                  .DescDiv {
+                    /*border-bottom: #007bff 1px;
+                    border-bottom-style: solid;*/
+                    margin-left: 5px;
+                    margin-right: 5px;
+                  }
+                  .DescHeader {
+                    color: #007bff;
+                    padding-bottom: -5%;
+                    border-bottom: lightgrey 1px;
+                    border-bottom-style: solid;
+                    font-size: 1vw;
+                    margin-bottom: -.5%;
+                    margin-top:10px; 
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    font-weight: 600;
+                  }
+                  
+                  .CourseDescBody {
+                    border-top: grey 1px;
+                    
+                    color: slategray;
+                    font-size: 1vw;
+                    margin-top: 2px;
+                    margin-bottom:10px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                  }
+
+                  .TermDiv {
+                    margin-left: 5px;
+                    margin-right: 5px;
+                    /*border-bottom: #007bff 1px;
+                    border-bottom-style: solid;*/
+                    
+                  }
+                  
+                  .TermHeader {
+                    color: #007bff;
+                    padding-bottom: -5%;
+                    border-bottom: lightgrey 1px;
+                    margin-bottom: -.5%;
+                    border-bottom-style: solid;
+                    font-size: 1vw;
+                    margin-top:10px;
+                    
+                    font-weight: 600;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                  }
+
+                  .CourseTerms {
+                    background-color: white;
+                    border-bottom: grey 1px;
+                    color: slategray;
+                    font-size: 1vw;
+                    margin-top: 3px;
+                    margin-bottom:10px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                  }
+                  
+                  .PresDiv {
+                    margin-left: 5px;
+                    margin-right: 5px;
+                  }
+                  .PresHeader {
+                    color: #007bff;
+                    padding-bottom: -5%;
+                    border-bottom: lightgrey 1px;
+                    margin-bottom: -.5%;
+                    border-bottom-style: solid;
+                    font-size: 1vw;
+                    margin-top:10px;
+                    
+                    font-weight: 600;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                  }
+
+                  .CoursePres {
+                    background-color: white;
+                    color: slategray;
+                    font-size: 1vw;
+                    margin-top: 2px;
+                    margin-bottom:10px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                  }
+
+                  .OverlapDiv {
+                    margin-left: 5px;
+                    margin-right: 5px;
+                  }
+
+                  .OverlapHeader {
+                    color: #007bff;
+                    padding-bottom: -5%;
+                    border-bottom: lightgrey 1px;
+                    margin-bottom: -.5%;
+                    border-bottom-style: solid;
+                    font-size: 1vw;
+                    margin-top:10px;
+                    
+                    font-weight: 600;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                  }
+
+                  .OverlappingReqs {
+                    background-color: white;
+                    color: slategray;
+                    font-size: 1vw;
+                    margin-top: 2px;
+                    margin-bottom:1px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                  }
+
+                  .CompDescDiv {
+                    /*border-bottom: #007bff 1px;
+                    border-bottom-style: solid;*/
+                    margin-left: 5px;
+                    margin-right: 5px;
+                  }
+
+                  .CompDescHeader {
+                    color: #28a745;
+                    padding-bottom: -5%;
+                    border-bottom: lightgrey 1px;
+                    border-bottom-style: solid;
+                    font-size: 1vw;
+                    margin-bottom: -.5%;
+                    margin-top:10px; 
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    font-weight: 600;
+                  }
+                  
+                  .CompCourseDescBody {
+                    border-top: grey 1px;
+                    
+                    color: slategray;
+                    font-size: 1vw;
+                    margin-top: 2px;
+                    margin-bottom:10px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                  }
+
+                  .CompTermDiv {
+                    margin-left: 5px;
+                    margin-right: 5px;
+                    /*border-bottom: #007bff 1px;
+                    border-bottom-style: solid;*/
+                    
+                  }
+                  
+                  .CompTermHeader {
+                    color: #28a745;
+                    padding-bottom: -5%;
+                    border-bottom: lightgrey 1px;
+                    margin-bottom: -.5%;
+                    border-bottom-style: solid;
+                    font-size: 1vw;
+                    margin-top:10px;
+                    
+                    font-weight: 600;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                  }
+
+                  .CompCourseTerms {
+                    background-color: white;
+                    border-bottom: grey 1px;
+                    color: slategray;
+                    font-size: 1vw;
+                    margin-top: 3px;
+                    margin-bottom:10px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                  }
+                  
+                  .CompPresDiv {
+                    margin-left: 5px;
+                    margin-right: 5px;
+                  }
+                  .CompPresHeader {
+                    color: #28a745;
+                    padding-bottom: -5%;
+                    border-bottom: lightgrey 1px;
+                    margin-bottom: -.5%;
+                    border-bottom-style: solid;
+                    font-size: 1vw;
+                    margin-top:10px;
+                    
+                    font-weight: 600;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                  }
+
+                  .CompCoursePres {
+                    background-color: white;
+                    color: slategray;
+                    font-size: 1vw;
+                    margin-top: 2px;
+                    margin-bottom:10px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                  }
+
+                  .CompOverlapDiv {
+                    margin-left: 5px;
+                    margin-right: 5px;
+                  }
+
+                  .CompOverlapHeader {
+                    color: #28a745;
+                    padding-bottom: -5%;
+                    border-bottom: lightgrey 1px;
+                    margin-bottom: -.5%;
+                    border-bottom-style: solid;
+                    font-size: 1vw;
+                    margin-top:10px;
+                    
+                    font-weight: 600;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                  }
+
+                  .CompOverlappingReqs {
+                    background-color: white;
+                    color: slategray;
+                    font-size: 1vw;
+                    margin-top: 2px;
+                    margin-bottom:10px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                  }
+
+                  .CompletedCourseDescBody {
+                    border-top: grey 1px;
+                    background-color: white;
+                    color: slategray;
+                    font-size: 1vw;
+                    margin-top:10px;
+                    margin-bottom:10px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                  }
+                  
+                  .CourseNumber {
+                    color: black;
+                    font-size: 15px;
+                    margin-bottom: -14px;
+                  }
+                  
+                  .CourseTitle {
+                    color: black;
+                    font-size: 20px;
+                  }
+                  
+                  .CourseUnits {
+                    color: black;
+                    font-size: 15px;
+                  }
+                  
+                  .buttonText {
+                    text-align: center;
+                  }
+                
+                .LinkToAcademicGuide {
+                  text-align: center;
+                  background-color: #007bff;
+                  vertical-align: middle;
+                  padding-top: 3px
+                }
+
+                .LinkToAcademicGuide_Text {
+                  text-decoration: underline white;
+                }
+
+                .fourYearContainer {
+                    grid-area: schedule;
+                    max-height: 80%
+                  }
+
+                  .FourYearPlan {
+                    margin-top: 0%;
+                    margin-left: .8%;
+                    margin-right: -2%;
+                    margin-bottom: -20%;
+                    height: 100%;
+                    padding: -10%;
+                  }
+                  
+                  .PlanNav {
+                    border-radius: 0px !important;
+                    font-size: 18px;
+                    width: 98%;
+                    height: 100%;
+                  }
+
+                  .PlanHeader {
+                    padding: 6px;
+                    display: grid;
+                    grid-template-columns: 86%;
+                    grid-template-areas: 'plans add' 
+                  }
+
+                  .PlanToggle {
+                    padding: 0px;
+                  }
+
+                  .planTab {
+                    color: white !important;
+                    font-size: 20px !important;
+                  }
+
+                  .SelectedPlanHeader {
+                    font-size: 25px;
+                    color: white;
+                    margin-left: 10px;
+                    font-weight: 300;
+                    text-transform: uppercase
+                  }
+                  
+                  .PlanOptionItem {
+                    border-top-right-radius: 8px;
+                    border-top-left-radius: 8px;
+                    border-bottom: none;
+                    border: 1px solid #5fa4ff;
+                  }
+                  
+                  .PlanOption {
+                    color: white;
+                  }
+                  
+                  .AddPlanButton {
+                    color: white;
+                    grid-area: add;
+                  }
+
+                  .AddPlanText {
+                    color: #3257FD !important;
+                    margin-left: 5px;
+                    font-size: 15px;
+                    font-weight: 600;
+                  }
+                  
+                  .PlanCardBody {
+                    background-color: #5fa4ff;
+                    max-height: 100%;
+                    padding: -4%;
+                    padding-bottom: 0px;
+                  }
+                  
+                  .SemesterContainer {
+                    margin-top: .5%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    height: 100%;
+                  }
+                  
+                  .SemesterCard {
+                    height: 48%;
+                    width: 80%;
+                    margin-right: 5px;
+                    
+                  }
+
+                  .SemesterHeader {
+                    display: grid;
+                    grid-template-columns: 90% 7%;
+                    grid-template-areas: 'date x space'
+                  }
+                  
+                  .SemDate {
+                      font-size: 1vw;
+                      color: #003e78;
+                      float: left;
+                      margin-top: 3%;
+                      font-weight: 700;
+                  }
+
+                  .deleteSemesterButton {
+                    justify-self: right;
+                    grid-area: x;
+                    align-self: center;
+                  }
+                  
+                  
+
+
+                  .unitCount {
+                      color: #003e78;
+                      grid-area: total;
+                      margin-top: 3%;
+                      font-size: 1vw;
+                      font-weight: 700;
+                  }
+
+                  .unitNum {
+                    color: #003e78;
+                    grid-area: count;
+                    float: right;
+                    text-align: right;
+                    margin-top: 3%;
+                    font-size: 1vw;
+                    font-weight: 700;
+                    margin-right: 4%;
+                  }
+
+                  .SemesterHeader {
+                    color: darkslategrey;
+                    font-size: 1vw;
+                    padding: 2px;
+                    margin-left: 3px;
+                  }
+                  
+                  .SemesterFooter {
+                    color: darkslategrey;
+                    font-size: 1vw;
+                    padding: 2px;
+                    margin-left: 3px;
+                    display: grid;
+                    grid-template-areas: "total count";
+                    grid-template-columns: 50%;
+                  }
+                  
+                  .SemesterOptionsButton {
+                    padding: 0;
+                    height: 10px;
+                    width: 10px;
+                    margin-left: -15px;
+                    margin-right: 30px;
+                    margin-top: -7px;
+                  }
+                  
+                  .SemesterOptionsMenu {
+                    padding: 0;
+                  }
+                  
+                  .DeleteSemesterButton {
+                    color: red;
+                  }
+                  
+                  .CourseTarget {
+                    padding: 0;
+                    display: flex;
+                    flex-direction: column;
+                    color: #F0F8FF;
+                    overflow: auto;
+                  }
+
+                  @keyframes coursePlanHover {
+                    from {background-color: #EBF9FF;
+                      color: #007bff;}
+                    to {background-color: #007bff;
+                      color: white;}
+                  }
+                  
+                  .CoursePlanButton {
+                    width: 98%;
+                    height: 16%;
+                    margin-right: 1%;
+                    margin-left: 1%;
+                    margin-top: 1%;
+                    border-radius: 5px;
+                    display: grid;
+                    background-color: #EBF9FF;
+                    color: #007bff;
+                    align-content: center;
+                    grid-template-columns: 8fr 1fr 1fr;
+                    grid-template-areas: "coursePlanNum coursePlanUnits options";
+                    text-align: center;
+                  }
+
+                  .CoursePlanButton:hover {
+                    animation-name: coursePlanHover;
+                    animation-duration: .5s;
+                    background-color: #007bff;
+                    color: white;
+                  }
+
+                  .CoursePlanNumber {
+                    grid-area: coursePlanNum;
+                    font-size: 1vw;
+                    font-weight: 550;
+                    justify-self: left;
+                    margin-top: 4%;
+                    margin-left: 5%;
+                  }
+                  
+                  .CoursePlanUnits {
+                    grid-area: coursePlanUnits;
+                    font-size: 1vw;
+                    font-weight: 550;
+                    justify-self: right;
+                    margin-top: 30%;
+                    margin-right: 7%;
+                  }
+                
+
+                  .courseOptionsButton {
+                      grid-area: options;
+                      height: 1.5vw;
+                      margin-top: 15%;
+                  }
+
+                  
+                  .CoursePlanOptionsMenu {
+                    padding: 0 !important;
+                  }
+                  
+                  .CoursePlanInfoButton {
+                    text-align: center;
+                    font-size: 17px;
+                    font-weight: 500;
+                  }
+                  
+                  .DeleteCourseButton {
+                    background-color: white;
+                    color: red;
+                    text-align: center;
+                    font-size: 17px;
+                    font-weight: 500;
+                  }
+
+                  .addButton {
+                    float: right;
+                  }
+
+              .PlanFooter {
+                background-color: #5fa4ff !important;
+                border-top: none;
+                display: grid;
+                grid-template-columns: 75%;
+                grid-template-areas: 'empty options';
+                padding: 3px
+              }
+
+              .PlanOptions {
+                grid-area: options
+              }
+                .PlanOptionsButton {
+                  margin-left: 10px !important;
+                  margin-top: -5px !important;
+                }
+                  
+                  
+                  
+             
+    .Footer {
+        grid-area: footer;
+        border-top: solid 1px gray;
+        justify-content: center;
+        }
+
+
